@@ -13,9 +13,10 @@ import { createClient } from "@supabase/supabase-js";
 //    VITE_SUPABASE_ANON_KEY  = eyJ...
 // ════════════════════════════════════════════════════════════════════
 
-const SUPABASE_URL = "https://lqozydnqxuhcchtdbyep.supabase.co";
-const SUPABASE_ANON_KEY = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imxxb3p5ZG5xeHVoY2NodGRieWVwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEwNTY2ODEsImV4cCI6MjA5NjYzMjY4MX0.hM_TsBBQ6ZaxuuAIumG4WvsJHpa_tYxvDiIVkKFMS0w
-const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const supabase = createClient(
+  "https://lqozydnqxuhcchtdbyep.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imxxb3p5ZG5xeHVoY2NodGRieWVwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEwNTY2ODEsImV4cCI6MjA5NjYzMjY4MX0.hM_TsBBQ6ZaxuuAIumG4WvsJHpa_tYxvDiIVkKFMS0w"
+);
 
 const QUESTION_TIME = 20; // segundos por pregunta
 const PALETTE = ["#e8453c", "#1368ce", "#d89e00", "#26890c"];
